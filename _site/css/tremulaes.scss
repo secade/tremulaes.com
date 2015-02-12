@@ -1,17 +1,98 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "texture";
+
+// new fonts: 'Anton', sans-serif; 'Roboto Slab', serif; 'Francois One', sans-serif; 'Inconsolata';
+
+$main-font: 'Francois One', sans-serif;
+$second-font: 'Roboto Slab', serif;
+
+.container {
+  font-family: $second-font;
+  font-size: 14px;
+  padding: 14px;
+  width: 75%;
+  margin: auto;
+  a {
+
+  }
+}
+
+$top-height: 70px;
+$main-texture-no: 26;
+$top-texture-gradient: #FBFE00; //#ddf0ef;
+$top-texture-color: 180deg;
+
+.top-box-texture {
+  $texture-top-background: lighten($top-texture-gradient, 0%);
+  $texture-bottom-background: darken($top-texture-gradient, 20%);
+  height: $top-height;
+  width: 100%;
+
+  .top-box-texture-inverted {
+    // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+    @include texture($top-texture-color, $texture-top-background, $texture-bottom-background, $main-texture-no, 0);
+    height: $top-height;
+    width: 100%;
+  }
+}
+
+.top-box-text {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: $main-font;
+}
+
+$body-texture-gradient: #F4F4F4; //#ddf0ef;
+$body-texture-color: 180deg;
+
+.body-texture {
+  $texture-body-background: lighten($body-texture-gradient, 0%);
+  $texture-bottom-background: darken($body-texture-gradient, 20%);
+  @include texture($body-texture-color, $texture-body-background, $texture-bottom-background, $main-texture-no, 0);
+  width: 100%;
+  margin: 0px;
+  // top: -10px;
+  padding: 0px;
+}
+
+.low-box {
+  margin: 0px;
+  padding: 0px;
+  .low-box-wrapper {
+    position: relative;
+    color: white;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    top: 125px;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+    font-weight: 100;
+    font-family: $second-font;
+  }
+  img {
+    width: 100%;
+    height: 130px;
+    bottom: -5px;
+    vertical-align: bottom;
+  }
+}
 
 .centered-navigation {
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
-  $dark-gray: #333 !default;
+  $dark-gray: #FFF !default; /* menu font color ! */
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
   //////////////////////////////////////////////////////////////////////////////////
 
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: #000;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -26,6 +107,8 @@
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
+  font-family: $main-font;
+  margin-bottom: 0px;
 
   // Mobile view
 
@@ -97,7 +180,7 @@
   }
 
   // The nav items
-  
+
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
       margin-left: $centered-navigation-item-nudge;
@@ -269,5 +352,9 @@
   }
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
 
 /*# sourceMappingURL=tremulaes.css.map */
