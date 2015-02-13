@@ -12,7 +12,7 @@ html {
 .container {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
-  padding: 14px;
+  padding-top: 14px;
   width: 75%;
   margin: auto; }
 
@@ -42,7 +42,8 @@ html {
 
 .low-box {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  clear: both; }
   .low-box .low-box-wrapper {
     position: relative;
     color: white;
@@ -59,6 +60,166 @@ html {
     height: 130px;
     bottom: -5px;
     vertical-align: bottom; }
+
+.accordion-tabs {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  padding: 0; }
+  .accordion-tabs::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 40em) {
+    .accordion-tabs {
+      border-radius: 3px;
+      border: 1px solid gainsboro; } }
+  .accordion-tabs .tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs .tab-header-and-content {
+        display: inline; } }
+    .accordion-tabs .tab-header-and-content:first-child .tab-link {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      @media screen and (max-width: 40em) {
+        .accordion-tabs .tab-header-and-content:first-child .tab-link {
+          border-top: 0; } }
+    @media screen and (max-width: 40em) {
+      .accordion-tabs .tab-header-and-content:last-child .tab-link {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; } }
+  .accordion-tabs img {
+    border: 7px black solid; }
+  .accordion-tabs .image-box-left {
+    float: left;
+    margin-right: 20px; }
+  .accordion-tabs .image-box-right {
+    float: right;
+    margin-left: 20px; }
+  .accordion-tabs .text-box-right {
+    margin-left: 277px; }
+  .accordion-tabs li {
+    margin: 10px 0; }
+  .accordion-tabs .tab-link {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid gainsboro;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 0.75em 0.809em;
+    text-decoration: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs .tab-link {
+        display: inline-block;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top: 0; } }
+    .accordion-tabs .tab-link:hover {
+      color: #477DCA; }
+    .accordion-tabs .tab-link:focus {
+      outline: none; }
+    .accordion-tabs .tab-link.is-active {
+      background-color: rgba(247, 247, 247, 0.5); }
+      @media screen and (min-width: 40em) {
+        .accordion-tabs .tab-link.is-active {
+          background-color: rgba(247, 247, 247, 0.5);
+          border: 1px solid gainsboro;
+          border-bottom-color: rgba(247, 247, 247, 0.5);
+          margin-bottom: -1px; } }
+  .accordion-tabs .tab-content {
+    background: rgba(247, 247, 247, 0.5);
+    display: none;
+    padding: 1.5em 1.618em;
+    width: 100%; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs .tab-content {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        border: 1px solid gainsboro;
+        float: left; } }
+
+.progress-bar {
+  background-color: #f2f2f2;
+  border: 1px solid gainsboro;
+  box-shadow: inset 0 0 3px 0 rgba(115, 115, 115, 0.15);
+  border-radius: 3px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%; }
+  .progress-bar > span.meter {
+    -webkit-animation: progress 0.7s linear infinite;
+    -moz-animation: progress 0.7s linear infinite;
+    animation: progress 0.7s linear infinite;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #477DCA;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%);
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+    border: 1px solid #2c5999;
+    border-radius: 2px;
+    display: block;
+    height: 100%;
+    width: 60%; }
+
+@-webkit-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-moz-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-ms-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-o-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+.stats-wrapper {
+  position: relative;
+  padding: 0;
+  text-align: center; }
+
+.stats {
+  padding: 0.75em;
+  display: inline-block;
+  margin: auto; }
+  .stats ul {
+    padding: 0; }
+  .stats li {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    color: #6f99d5;
+    display: inline;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 800;
+    line-height: 1.1em;
+    padding: 0 0.7em; }
+    .stats li:first-child {
+      padding-left: 0; }
+    .stats li:last-child {
+      border-right: 0; }
+  .stats span {
+    color: #333;
+    display: block;
+    font-size: 0.7em;
+    font-weight: normal; }
 
 .centered-navigation {
   /* menu font color ! */
