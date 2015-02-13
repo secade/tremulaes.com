@@ -1,0 +1,16 @@
+---
+title: The Blog
+layout: default
+---
+<h2>My Blog</h2>
+
+<p>A collection of thoughts; some random, some required, but at least all mine.</p>
+
+<ul style="list-style:none">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

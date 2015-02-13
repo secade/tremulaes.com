@@ -14,6 +14,16 @@ $second-font: 'Roboto Slab', serif;
   width: 75%;
   margin: auto;
   min-height: 350px;
+  p > img {
+    margin: auto;
+    display: block;
+    border: 7px black solid;
+  }
+}
+
+.photo-credit-caption {
+  font-size: 12px;
+  text-align: center;
 }
 
 $top-height: 70px;
@@ -26,13 +36,7 @@ $top-texture-color: 180deg;
   $texture-bottom-background: darken($top-texture-gradient, 20%);
   height: $top-height;
   width: 100%;
-
-  .top-box-texture-inverted {
-    // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
-    @include texture($top-texture-color, $texture-top-background, $texture-bottom-background, $main-texture-no, 0);
-    height: $top-height;
-    width: 100%;
-  }
+  @include texture($top-texture-color, $texture-top-background, $texture-bottom-background, $main-texture-no, 0);
 }
 
 .top-box-text {
@@ -54,6 +58,18 @@ $body-texture-color: 180deg;
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+.splash-wrapper {
+  display: block;
+  margin: auto;
+  img {
+  border: 5px black solid;
+  border-radius: 7px;
+    margin: auto;
+    display: block;
+    padding: 0;
+  }
 }
 
 .low-box {
@@ -139,6 +155,7 @@ $body-texture-color: 180deg;
   img {
     border: 7px black solid;
   }
+
   .image-box-left {
     float: left;
     margin-right: 20px;
@@ -207,7 +224,7 @@ $body-texture-color: 180deg;
       float: left;
     }
   }
-}
+} 
 
 // Cards ///////////////////////////////////////////////////////////////// Cards
 

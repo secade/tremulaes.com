@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="future site for tremulaes.com">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box" class="top-box-texture">
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h1>The Garbage Bin</h1>
+
+<h3>How Processors Handle Your Junk</h3>
+
+<p>Computer memory is a somewhat weird concept, and it can be difficult for many modern users to develop a robust understanding since most use is so many levels above direct memory management. This blog post is intended to give an overview of some different kinds of memory that contribute to many modern computer environments, as well as the concept of garbage collection and its importance.</p>
+
+<h4>Volatile vs NonVolatile</h4>
+
+<p>Both in modern and classical systems, one of the most important concepts in memory is volatility. In its most basic terms, volatile memory is simply storage that dissipates when an electric charge is no longer provided. Pretty much all high-speed memory in a computer is volatile- both your RAM memory and your on-die CPU memory is volatile and needs constant electrical refreshing to keep the data active.</p>
+
+<p>If you have an open but unsaved word document and your computer is unplugged, chances are you'll lose the file- it was still in the volatile RAM, never moved to non-volatile memory such as a hard drive. Once you save it, though, a copy of the file is then placed into nonvolatile memory where it can be fetched or modified as need be. Still, if you make changes and then don't save, the data is discarded from the volatile memory and lost forever- so save often!</p>
+
+<p>So you may ask, "Why isn't all memory nonvolatile?" The primary reason is that non-volatile memory is significantly slower than the must faster RAM or CPU memory (L1, L2, L3 and sometimes L4). The RAM from your computer is specialized for extreme access and read/write speed so that your computer can handle a lot at once, and your CPU memory, though small, is lightning fast and designed to handle some of the most commonly used or repeated data. These volatile memory locations are designed to handle significant data thoroughput- intake what it needs, then get it out as quickly as possible.</p>
+
+<p>Now, memory speed is determined by a lot more than just volatility, but that's a topic all in its own. One important aspect of memory worth mentioning here is bus width- in modern computing, often times a distinction between 32bit or 64bit. This describes the 'width' of the data lane between your CPU and the RAM which can have a huge impact on overall performance. If you imagine dataflow as water in pipes, increasing bus size is similar to widening the pipe through which the water is traveling- doubling that width gives a very significant increase in data thoroughput, a common concern in modern computers where files can be absolutely enormous.</p>
+
+<h4>Garbage Collection</h4>
+
+<p>So what happens to old data we no longer need? Especially for programmers, this can be an important question. Classically, a developer often had to handle this manually- when object A is no longer needed, the program has to find where object A is held in memory and remove it so that space is free for some other later object to use. In heavy programs like an operating system, removing unnecessary data from memory is an absolute necessity- no computer has enough memory to mishandle it's memory cleaning.</p>
+
+<p>Modern computers work much the same, but their garbage collection is rarely done 'manually' by application developers. Instead, garbage collection becomes a largely automated process, often times by their language interpreter or compiler. Languages like Java handle this consistently through the Java Virtual Machine (JVM) that accepts and interprets the commands and data it inputs, and it tosses old junk out of memory automatically. Ruby handles it similarly, keeping very close track of memory allocation and initiating garbage collection when it is ready.</p>
+
+<p>Some platforms like the Microsoft .NET system allow for a combination of manual and automatic garbage collection. Though the built in controls are oftentimes sufficient for standard web applications, sometimes it can be overwhelming on a system, and .NET allows many easy controls for developers to begin handling some of the memory management in a more manual manner. This is a pretty common theme across most languages, though some certainly allow for easier customization than others.</p>
+
+<p>Even with garbage collection running in the background of pretty much every modern interpreter and compiler, it's still essential that programmers consider their use or abuse of memory as they write their code. Instantiating unnecessary objects or variables is at best considered a terrible practice and some languages like Rust or C++ throw errors while compiling if a variable is created but never referenced. Many processes or methods can create unnecessary objects or clones of variables that aren't needed, and on a large scale or heavily-repeated process, this can really bog down your programs speed and efficiency.</p>
+
+<p>Especially as a dev student, I recognize that the types of applications I'm creating are likely all so lightweight that heavy consideration of memory management and garbage collection aren't always necessary to heavily ponder. Regardless, understanding the importance of sleek and clean programming is an important concept to really understand early on because at some point, it will become an issue that needs to be addressed. Remember to program clean and straightforward, and you're already on your way to being a great garbageman.</p>
+
+
+<a href="/blog/">Go Back</a>
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+  </body>
+</html>

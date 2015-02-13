@@ -16,15 +16,20 @@ html {
   width: 75%;
   margin: auto;
   min-height: 350px; }
+  .container p > img {
+    margin: auto;
+    display: block;
+    border: 7px black solid; }
+
+.photo-credit-caption {
+  font-size: 12px;
+  text-align: center; }
 
 .top-box-texture {
   height: 70px;
-  width: 100%; }
-  .top-box-texture .top-box-texture-inverted {
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/ps_neutral.png"), -webkit-linear-gradient(180deg, #fbfe00, #969800), center no-repeat #fbfe00 scroll;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/ps_neutral.png"), linear-gradient(180deg, #fbfe00, #969800), center no-repeat #fbfe00 scroll;
-    height: 70px;
-    width: 100%; }
+  width: 100%;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/ps_neutral.png"), -webkit-linear-gradient(180deg, #fbfe00, #969800), center no-repeat #fbfe00 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/ps_neutral.png"), linear-gradient(180deg, #fbfe00, #969800), center no-repeat #fbfe00 scroll; }
 
 .top-box-text {
   text-align: center;
@@ -40,6 +45,16 @@ html {
   width: 100%;
   margin: 0px;
   padding: 0px; }
+
+.splash-wrapper {
+  display: block;
+  margin: auto; }
+  .splash-wrapper img {
+    border: 5px black solid;
+    border-radius: 7px;
+    margin: auto;
+    display: block;
+    padding: 0; }
 
 .low-box {
   margin: 0px;

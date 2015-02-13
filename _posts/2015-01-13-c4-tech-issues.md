@@ -1,0 +1,24 @@
+---
+title: Holes in Our World
+layout: post
+excerpt_separator: ""
+excerpt: "A common conversation in popular culture, especially in academics, has been the overall lack of diversity in STEM fields- this certainly includes the tech sector. Numerous studies and reports continue to show that woman and people of color are sorely underrepresented in the technical fields of computer science and engineering. Although the numbers have been increasing in recent years, the balance still remains sorely out of whack, and the tech community suffers."
+---
+# Holes in Our World
+### Pondering Color in a Xerox World
+
+A common conversation in popular culture, especially in academics, has been the overall lack of diversity in STEM fields- this certainly includes the tech sector. Numerous studies and reports continue to show that woman and people of color are sorely underrepresented in the technical fields of computer science and engineering. Although the numbers have been increasing in recent years, the balance still remains sorely out of whack, and the tech community suffers.
+
+Most everyone is aware at this point that the industry is largely ruled by white males. Not only do they make up the majority of the workforce itself, but they are heavily overrepresented in management and leadership tiers across nearly all of the industry. The glass ceiling, the barrier industry women seem to hit, keeping them out of upper management positions, is a very real phenomenom, as is the similar 'bamboo ceiling' that affects the second-most represented group in the workforce, Asians.
+
+The causes for this are plentiful and complex, and I'm too far from any legitimate sociology credentials to speak at length. Coming from an education backgorund, I do firmly believe that the gap begins early in a child's life, as early as elementary school or kindergarten, as the expectations place on boys and girls immediately begins to divide. Teacher's own subtle biases have helped keep the gap well and alive as they intentionally or accidentally push girls into the liberal arts and boys into STEM subjects. This has drastic effects on later life as the pool of technically trained women remains small which only serves to contribute to their overall lack of representation in the tech industry.
+
+And that is only one of many theories examining the issue at hand.
+
+Lack of racial diversity is rampant, as is lack of socio-economic diversity, and oft-forgotten facet. Many of the old brigade in the tech world started tinkering at young ages or in college, but in the years before home PCs or at-home broadband were a common deal, the average person rarely had the chance to even interact with computers, let alone have a chance to study Computer Science, the foundation of the entire tech industry. Without economic resources at your disposal, it is still difficult to get a good tech education, and many people with lower levels of economic security struggle to enter the tech industry despite the plethora of free resources- learning how to program is pretty difficult when you're working a full-time job just to get by and pay your bills.
+
+Further, the LGBTQ community remains underrepresented in the larger tech community. Despite corporate environments in tech growing more and more LGBTQ friendly in recent years, there is still a great deal of stress and pressure for many in the tech world, many feeling the need to hide their sexuality in order to fit in to the overall hegemonic "boy's club" culture that still exists in many iterations across the tech world. Never particularly friendly to alternative sexualities, it creates anxiety and stress that takes a toll on LGBTQ members of the tech community, at any stage in their career.
+
+In my mind, any solution is going to involve some difficult and open conversations among members of the industry, across all levels and from top-to-bottom. Panels and social groups from members within the community can help provide members feel more comfortable and provide professional support as well. Government aid, in the form of employment non-discrimanation laws and the reduction of housing discrimination can go a long way to helping people from any background to feel more comfortable as themselves while they work in tech, and naturally therefore perform better than ever before.
+
+There is no easy solution to a problem that dates back to the beginning of the industry and contains from larger social issues playing out here in America. The tech world must remember that although it is often playing by its own rules, it is not totally insulated from the rest of the country and that it will always be both reflecting and contributing to the greater conversation of society and culture in America and in the world. As members of this community, we can all make choices that either contribute towards the continuation of our diversity problem, or its dissolution.

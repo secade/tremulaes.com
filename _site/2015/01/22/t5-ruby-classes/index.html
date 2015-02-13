@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="future site for tremulaes.com">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box" class="top-box-texture">
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h1>Stabby Stabby</h1>
+
+<h3>Ruby: The Knife Manufacturer</h3>
+
+<p>Compared to many other OOP languages, the Ruby commands for creating class specifications, then instantiating the class into 'physical' objects is fairly straightforward and almost english-readable. A class is a general description for the possible 'shape' of an object. Trying to come up with physical, real-world analogies to every aspect of OOP is both difficult and a bit unrealistic, so I'll eschew devoting too much time on that topic and dive straight into an example on knives.</p>
+
+<p>We begin with the basics: creating the class.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&gt;</span><span class="k">class</span> <span class="nc">Knife</span>
+<span class="o">&gt;</span><span class="k">end</span></code></pre></div>
+
+
+<p>Simple enough, right? So now we have this general concept that a 'knife' could exist, but what the hell is a knife? What does it do? What is it's purpose? Without more information, this concept of knife is meaningless. Let's add some basic traits that knives can have, and we're going to add an 'initialize' method- this is what allows us to instantiate, or call into existence, a knife object.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">Knife</span>
+<span class="o">&gt;</span> <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">serrated</span><span class="p">)</span>
+<span class="o">&gt;</span> <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+<span class="o">&gt;</span> <span class="vi">@length</span> <span class="o">=</span> <span class="n">length</span>
+<span class="o">&gt;</span> <span class="vi">@serrated</span> <span class="o">=</span> <span class="n">serrated</span>
+<span class="o">&gt;</span> <span class="k">end</span>
+<span class="o">&gt;</span> <span class="k">end</span></code></pre></div>
+
+
+<p>You should recognize the basic form of the initialize method, and the three items in parenthesis as the parameters necessary to run the method- you'll need those whenever you create a new Knife object. Now that we have the ability to create a Knife, lets add in some other methods that they can do.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&gt;</span> <span class="k">def</span> <span class="nf">slice</span>
+<span class="o">&gt;</span> <span class="c1">#slice code</span>
+<span class="o">&gt;</span> <span class="k">end</span>
+<span class="o">&gt;</span> <span class="k">def</span> <span class="nf">dice</span>
+<span class="o">&gt;</span> <span class="c1">#slice code</span>
+<span class="o">&gt;</span> <span class="k">end</span>
+<span class="o">&gt;</span> <span class="k">def</span> <span class="nf">stab</span>
+<span class="o">&gt;</span> <span class="c1">#slice code</span>
+<span class="o">&gt;</span> <span class="k">end</span></code></pre></div>
+
+
+<p>Alright, now we can create a Knife and it can do a few things. By packaging those methods inside of the class, we make them available to any object that is from the class- so any Knife can slice, dice, and stab. Utilizing instance variables like @length and @serrated inside of these shared methods can provide distinctions in the way that a knife performs the method. For example, a paring knife would stab very differently from a butterfly knife, and an 8" chef's knife will work very differently from a butcher's cleaver.</p>
+
+<p>The class and object system in Object Oriented Programming allows us to package code together for more efficiency in both running commands but also interacting with them afterwards. We can package similar actions together while leaving others as totally separate processes depending on needs. The knowledge of when to do this comes with practice, but as a guiding principal, I like to create separate methods if I can imagine ever needing to take that action separate from the rest at any point. With our knife example, washing the knife may be something we do after every method above- because it's accessed multiple times, it's best to write a separate method for it rather than writing it three times. Never forget DRY- don't repeat yourself.</p>
+
+<p>Classes are a great way to organize your code and allow for repeatable actions across multiple data points. We used the above class to create Knife objects that share some qualities with other basic differences- this is the core of OOP. Allowing for create flexibility across a program, objects and classes allow a programmer to put information and actions into neat packages to be accessed as necessary. Ruby uses this as a fundamental part of its design, and as a Ruby developer, so should you.</p>
+
+
+<a href="/blog/">Go Back</a>
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+  </body>
+</html>
