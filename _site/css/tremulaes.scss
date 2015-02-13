@@ -27,7 +27,7 @@ $second-font: 'Roboto Slab', serif;
 }
 
 $top-height: 70px;
-$main-texture-no: 26;
+$main-texture-no: 66;
 $top-texture-gradient: #FBFE00; //#ddf0ef;
 $top-texture-color: 180deg;
 
@@ -53,7 +53,7 @@ $body-texture-color: 180deg;
 
 .body-texture {
   $texture-body-background: lighten($body-texture-gradient, 0%);
-  $texture-bottom-background: darken($body-texture-gradient, 20%);
+  $texture-bottom-background: darken($body-texture-gradient, 55%);
   @include texture($body-texture-color, $texture-body-background, $texture-bottom-background, $main-texture-no, 0);
   width: 100%;
   margin: 0px;

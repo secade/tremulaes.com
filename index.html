@@ -13,4 +13,14 @@ layout: default
 
 <h2>Welcome!</h2>
 
-<p>Welcome to the website of Chris Singer! Though some parts are still under construction</p>
+<p>Welcome to the website of Chris Singer! Though some parts are still under construction, feel free to look around and learn a little more about me and my work. If you have any questions, please <a href="/contact/">contact</a> me!</p>
+
+<h2>Recent Blogs</h2>
+
+<ul style="list-style:none">
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

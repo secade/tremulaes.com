@@ -5,9 +5,9 @@ layout: default
 
 ## Rubysweeper
 
-Simple Minesweeper clone done entirely in Ruby, game run fully in the command line. Originally started solo, I was joined by fellow Dev Bootcamp student [https://twitter.com/MCBaylis](Mary Baylis) to help finish up the project.
+Simple Minesweeper clone done entirely in Ruby, game run fully in the command line. Originally started solo, I was joined by fellow Dev Bootcamp student [Mary Baylis](https://twitter.com/MCBaylis) to help finish up the project.
 
-Public repo available [https://github.com/secade/ruby-sweeper](here).
+Public repo available [here](https://github.com/secade/ruby-sweeper).
 
 ## Versions
 
