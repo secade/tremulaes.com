@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Chris Singer, junior developer and student located in Columbus, OH. Ruby, SQL, and food enthusiast.">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box" class="top-box-texture">
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h1>New Project: Gemfarm</h1>
+
+<h2>The Inspiration</h2>
+
+<p>Although I have no desire to do it professionally, I've always had a desire to do some video game development. My old college roommate and good friend is now a professional indie dev with the <a href="http://hitboxteam.com/">Hitbox Team</a> studio and I was able to meet a lot of other really passionate devs by attending PAX Seattle last summer. Suffice to say, my appetite was whetted.</p>
+
+<p>After working on a homebrew, ruby CLI version of <a href="/portfolio/rubysweeper/">minesweeper</a>, I wanted to go a lot further. Rather than just a CLI-based game, I wanted something that had visuals and sounds- something that <em>felt</em> more like a game. So a fellow Dev Bootcamp student and I did some searching, some twitter research, and settled on the simple render library for Ruby called <a href="http://www.libgosu.org/">Gosu</a>.</p>
+
+<h2>Concept</h2>
+
+<p>Although I did want to take a big leap forward from the old CLI-based game, I didn't want to destroy my own sanity by doing something really out there/crazy or too technically difficult for me. I thought back to some of the oldest/simplest games I could think of and I remembered my childhood love for Pokemon- the <em>original</em> pokemon, Red and Blue. And I knew it- I wanted a game that looked and felt like an old tile-based, nearly black-and-white game.</p>
+
+<p>Once I had the aesthetics locked into my head, I knew I'd have to keep the gameplay elements pretty simple- you can't have an amazing fighting game or shooter using that old style, so I started to think what would be easy to get as a sample. After some consideration, I decided on a farmsim- you'd play a farmer who raised some crops! From there, and some excited chatting with my future coconspirator <a href="http://marycbaylis.github.io/">Mary Baylis</a>, we came up with a few more features, an end game, and some gameplay elements.</p>
+
+<p>Again, the main goal of this is not to make a revolutionary game- just for development practice. After all, I've only been doing development for about 6 weeks right now, and we knew pumping out a game made practically from scratch would be be an enormous challenge. And it is.</p>
+
+<h2>First Steps</h2>
+
+<p>The first challenge came from building our little engine from scratch- tile-based movement, animation, and handling the update/draw loops. Gosu is fairly lightweight, having your basic window and drawing controls as well as an update and a draw loop that run 60 ticks/second- and nothing else. We started off by throwing together some really simple 16x16 pixel art and then embarked on the movement engine late on a Saturday night.</p>
+
+<p>Here's what we've got so far:</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KDbtDBXPrwM" frameborder="0" allowfullscreen></iframe></div>
+
+
+<h2>The Future</h2>
+
+<p>There's a lot more to do for Gemfarm- tons of additional features to implement and work to add in. I spent 4+ hours today tracking down a bug in the movement engine- while adding in the ability to face a new direction when you tap lightly, I exposed an old bug that had been in place but invisible since the first night's worth of work. Starting to really feel like a developer.</p>
+
+<p>If you like what you see here and want to learn more about Gemfarm, check out the <a href="https://github.com/secade/gemfarm">github repo</a>- all code is open and available for your viewing pleasure!</p>
+
+
+<a href="/blog/">Go Back</a>
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+  </body>
+</html>

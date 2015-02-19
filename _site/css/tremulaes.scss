@@ -1,11 +1,19 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import "texture";
+@import "css/texture";
 
 // new fonts: 'Anton', sans-serif; 'Roboto Slab', serif; 'Francois One', sans-serif; 'Inconsolata';
 
 $main-font: 'Francois One', sans-serif;
 $second-font: 'Roboto Slab', serif;
+
+.video-container {
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .container {
   font-family: $second-font;
@@ -66,9 +74,9 @@ $body-texture-color: 180deg;
   img {
   border: 5px black solid;
   border-radius: 7px;
-    margin: auto;
-    display: block;
-    padding: 0;
+  margin: auto;
+  display: block;
+  padding: 0;
   }
 }
 
