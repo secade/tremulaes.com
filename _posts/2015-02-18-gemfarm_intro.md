@@ -1,6 +1,7 @@
 ---
 title: "Gemfarm Preview"
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "Although I did want to take a big leap forward from the old CLI-based game, I didn't want to destroy my own sanity by doing something really out there/crazy or too technically difficult for me. I thought back to some of the oldest/simplest games I could think of and I remembered my childhood love for Pokemon- the _original_ pokemon, Red and Blue. And I knew it- I wanted a game that looked and felt like an old tile-based, nearly black-and-white game."
 ---

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Chris Singer, junior developer and student located in Columbus, OH. Ruby, SQL, and food enthusiast.">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box"> <!-- class="top-box-texture" -->
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h2>Gemfarm</h2>
+
+<p><img src="/img/gemfarm-gameplay.png" alt="Old Homepage" /></p>
+
+<p>The beginnings of Gemfarm are detailed more thoroughly in <a href="/2015/02/18/gemfarm_intro/">this blog post</a>, but in preparation of me beginning my time in the intensive portion of <a href="/portfolio/dev-bootcamp/">code school</a>, I've decided to go ahead and put Gemfarm to rest now that I've reached a decent stopping point.</p>
+
+<p>Gemfarm is a small sample game about a farmer named Ruby trapped in a tiny world on which she farms. I intentionally chose to do a game modeled after a classic Gameboy style- tile-based movement and extra basic colors (primarily white, black, and two shades of gray). Special sprites use a single color to splash a little more life into the game. Take a look below at the original gameplay sample:</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KDbtDBXPrwM" frameborder="0" allowfullscreen></iframe></div>
+
+
+<h4>Updates</h4>
+
+<p>I spent a week working on the project total, going from no knowledge of how to build a game to a functional, if boring, usable game. The library that I used is called <a href="http://www.libgosu.org/">Gosu</a> and is very lightweight- it handles some basic drawing functions by creating a window on which you can call all your draw commands, some basic User Input help with easy, built in methods for reading keyboard input, and the window class comes with a basic gameloop built in it- empty update/draw functions running at approximately 60 ticks/second.</p>
+
+<p>Everything else was built by myself from raw Ruby. All graphics were created by me for use in this game and all sounds, excepting a 'bubble' sound effect, were also made just for this game using (Famitracker)[http://famitracker.com/]. Graphics were made using the online pixel-art editor (Piskell)[http://www.piskelapp.com/] which came with really useful tools for handling animated sprites and automatic creating of spritesheets.</p>
+
+<p>The biggest challenge for this project came in the overall code design of the project. I've been learning coding for about 7 weeks now and handling the complexity and scale of this was surprisingly difficult. Knowing when to create new classes and objects is a talent and one that I'm sorely lackling- a quick review of <a href="https://github.com/secade/gemfarm">my code</a> reveals about twenty different things that should be seperated into their own classes and objects, but I was often lacking either understanding or time.</p>
+
+<p><img src="/img/gemfarm-ruby.png" alt="Ruby Spritesheet" /></p>
+
+<p>Still, the project did come together. This was the first gui I'd ever designed programmatically and it was awesome to see my work come together and become something that users could actually interact with directly. Every new feature implemented, whether it was the text ability for slow scrolling onto a screen or the goofy title screen that I eventually made, was a joy and felt like a victory.</p>
+
+<p>I really pushed my limits here and although I'm sad to leave Ruby behind- after all, I have a billion ideas to make the gameplay better, smoother, and more interesting- but it's time to move on to my next project and focus on succeeding in code school. I enjoyed meeting Ruby and look forward to creating more fun and exciting projects like this one.</p>
+
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+    <script>
+      document.getElementById("gradient-box").className = "top-box-texture-green";
+    </script>
+  </body>
+</html>

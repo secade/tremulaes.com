@@ -1,6 +1,7 @@
 ---
 title: We are the Chefs
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "It isn't easy being a chef. There's an artistry to it, a series of decisions that are made carefully based off of years of experience in the kitchen, a familiarity with their products, and a desire to produce something amazing. Culinary prowress is an art, an expression that few outside of the field can comprehend."
 ---

@@ -1,6 +1,7 @@
 ---
 title: 'Portfolio: Rubysweeper'
 layout: default
+topcolor: green
 --- 
 
 ## Rubysweeper

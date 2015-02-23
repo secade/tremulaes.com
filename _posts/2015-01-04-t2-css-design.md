@@ -1,6 +1,7 @@
 ---
 title: Making Pixel Boxes
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "CSS spacing and positioning elements are without a doubt tricky principles. Understanding when to use padding, margin or border to make a site look exactly how you want it to is a challenge even for experienced web developers."
 ---

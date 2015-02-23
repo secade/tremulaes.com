@@ -36,15 +36,37 @@ $second-font: 'Roboto Slab', serif;
 
 $top-height: 70px;
 $main-texture-no: 66;
-$top-texture-gradient: #FBFE00; //#ddf0ef;
+$top-texture-gradient-yellow: #FBFE00;
+$top-texture-gradient-red: #FF0000;
+$top-texture-gradient-green: #15DB00;
+$top-texture-gradient-blue: #00B1AA;
+$top-texture-gradient-purple: #E957BD;
 $top-texture-color: 180deg;
 
-.top-box-texture {
-  $texture-top-background: lighten($top-texture-gradient, 0%);
-  $texture-bottom-background: darken($top-texture-gradient, 20%);
+.top-box-texture-yellow {
   height: $top-height;
   width: 100%;
-  @include texture($top-texture-color, $texture-top-background, $texture-bottom-background, $main-texture-no, 0);
+  @include texture($top-texture-color, lighten($top-texture-gradient-yellow, 20%), darken($top-texture-gradient-yellow, 20%), $main-texture-no, 0);
+}
+.top-box-texture-green {
+  height: $top-height;
+  width: 100%;
+  @include texture($top-texture-color, lighten($top-texture-gradient-green, 20%), darken($top-texture-gradient-green, 20%), $main-texture-no, 0);
+}
+.top-box-texture-red {
+  height: $top-height;
+  width: 100%;
+  @include texture($top-texture-color, lighten($top-texture-gradient-red, 20%), darken($top-texture-gradient-red, 20%), $main-texture-no, 0);
+}
+.top-box-texture-blue {
+  height: $top-height;
+  width: 100%;
+  @include texture($top-texture-color, lighten($top-texture-gradient-blue, 20%), darken($top-texture-gradient-blue, 10%), $main-texture-no, 0);
+}
+.top-box-texture-purple {
+  height: $top-height;
+  width: 100%;
+  @include texture($top-texture-color, lighten($top-texture-gradient-purple, 20%), darken($top-texture-gradient-purple, 35%), $main-texture-no, 0);
 }
 
 .top-box-text {
@@ -60,7 +82,7 @@ $body-texture-gradient: #F4F4F4;
 $body-texture-color: 180deg;
 
 .body-texture {
-  $texture-body-background: lighten($body-texture-gradient, 0%);
+  $texture-body-background: lighten($body-texture-gradient, 40%);
   $texture-bottom-background: darken($body-texture-gradient, 55%);
   @include texture($body-texture-color, $texture-body-background, $texture-bottom-background, $main-texture-no, 0);
   width: 100%;
@@ -753,6 +775,7 @@ $body-texture-color: 180deg;
 body {
   margin: 0px;
   padding: 0px;
+  min-width: 860px;
 }
 
 /*# sourceMappingURL=tremulaes.css.map */

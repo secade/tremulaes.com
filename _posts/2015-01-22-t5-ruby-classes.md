@@ -1,6 +1,7 @@
 ---
 title: Stabby Stabby
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "Compared to many other OOP languages, the Ruby commands for creating class specifications, then instantiating the class into 'physical' objects is fairly straightforward and almost english-readable. A class is a general description for the possible 'shape' of an object. Trying to come up with physical, real-world analogies to every aspect of OOP is both difficult and a bit unrealistic, so I'll eschew devoting too much time on that topic and dive straight into an example on knives."
 ---

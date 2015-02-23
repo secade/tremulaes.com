@@ -1,6 +1,7 @@
 ---
 title: Into a New Land
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "Several years ago, I first got the idea to learn web development from a friend and immediately dived into the CodeAcademy courses for JavaScript, HTML, and CSS. It was challenging for me; with no technical background at all and rarely using computers for anything other than video games and music, I had very little framework on which to build my knowledge. I quickly abandoned the thought."
 ---

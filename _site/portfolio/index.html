@@ -19,7 +19,7 @@
   <body>
 
     <div id="top" class="top-box">
-      <div id="gradient-box" class="top-box-texture">
+      <div id="gradient-box"> <!-- class="top-box-texture" -->
         <div class="top-box-text">Christopher [c] Singer</div>
       </div>
     </div>
@@ -42,6 +42,20 @@
     </div><!-- centered-nav -->
     <div class="body-texture">
       <div id="central" class="container">
+
+<div class="cards">
+  <div class="card"> 
+    <div class="card-image">
+      <img src="/img/gemfarm-ruby.png" alt="Gemfarm Gameplay">
+    </div>
+    <div class="card-header">
+      <a href="/portfolio/gemfarm/">Gemfarm</a>
+    </div>
+    <div class="card-copy">
+      <p>My first foray into making a video game from scratch.</p>
+    </div>
+  </div>
+</div>
 
 <div class="cards">
   <div class="card">
@@ -90,5 +104,8 @@
         <img src="/img/silhouette.png" />
       </div>
     </div>
+    <script>
+      document.getElementById("gradient-box").className = "top-box-texture-green";
+    </script>
   </body>
 </html>

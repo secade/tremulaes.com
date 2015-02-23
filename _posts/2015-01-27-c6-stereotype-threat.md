@@ -1,6 +1,7 @@
 ---
 title: Subtle Damage
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "I lived for several years abroad in South Korea, both in the major metropolitan city of Seoul, and in the rural, smaller city of Gwangju. My time there was rife was situations in which I felt stereotype threat because stereotypes were often the only way people knew how to handle the strange, foreign tall blonde guy."
 ---

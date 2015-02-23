@@ -1,6 +1,7 @@
 ---
 title: OOPs I did it again
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "Disclaimer: I'm aware that my blog title is a Britney Spears reference, and I apologize."
 ---

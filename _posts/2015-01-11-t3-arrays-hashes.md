@@ -1,6 +1,7 @@
 ---
 title: Hashercize
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "One of the biggest struggles that I’ve had in moving over to Ruby has been trying to grasp the concept of a Hash- what are they for? What is their purpose? How are they used in production? It’s been a real challenge to wrap my mind around why you would ever choose a Hash over an array, so I’ve had to do some considerable reading to better grasp what they do the same, and what they do differently."
 ---

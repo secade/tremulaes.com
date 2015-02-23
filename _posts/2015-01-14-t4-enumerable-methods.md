@@ -1,6 +1,7 @@
 ---
 title: Cartography
 layout: post
+topcolor: red
 excerpt_separator: ""
 excerpt: "Imagine a factory assembly line. Picture yourself standing on the floor at a particular spot in the process as the machines and people around you work their magic to produce, say, a can of soup. You're standing at the place where the cans, starting off as sheets of metal, are cut, stamped, then twisted into the shape of the infamous Campbell's Soup. Right in front of you, arms of machine's whirl as the metal transforms from a cold, alien sheet to the comfortable image of a can."
 ---
