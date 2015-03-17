@@ -33,7 +33,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function() {
-  // var desiredHeight = $("body").height() - $("#top").height() - $("#bot").height() - $("#nav").height() - 2;
   $("#central").css("min-height", "100vh + 1300px" );
 });
 
