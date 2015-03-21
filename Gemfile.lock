@@ -80,3 +80,4 @@ DEPENDENCIES
   neat
   pygments.rb
   rdiscount
+  sass

@@ -20,7 +20,8 @@ html {
   padding-top: 14px;
   width: 75%;
   margin: auto;
-  min-height: 350px; }
+  min-height: 640px;
+  height: auto; }
   .container p > img {
     margin: auto;
     display: block;
