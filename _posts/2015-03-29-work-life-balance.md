@@ -3,7 +3,7 @@ title: "Work-Life Balance?"
 layout: post
 topcolor: red
 excerpt_separator: ""
-excerpt: ""
+excerpt: "All that said, the challenge and workload here in Dev Bootcamp is such that it could overwhelm even my voracious appetite for knowledge and near-masochistic desire to learn everything and do every assignment. I like lists and checkboxes, but the work has surpassed what I can do- even the Energizer Bunny has to recharge sometimes."
 ---
 
 # Work-Life Balance?
