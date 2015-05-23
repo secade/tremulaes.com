@@ -7,6 +7,7 @@ topcolor: green
 # Dev Bootcamp
 
 ![Dev Bootcamp logo](/img/dev-bootcamp.jpg)
+<div style="margin:0 auto;text-align:center;">(image used with permission)</div>
 
 [Dev Bootcamp](http://devbootcamp.com/) is a code school that focuses on helping its students to become excellent beginners. Rather than claiming they can produce an amazing, high-level developer in a manner of months, they recognize the need for on-hand experience and instead work to teach a variety of skills that will help its graduates move into junior level positions to begin their careers as Devs.
 
