@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Chris Singer, newly minted Software Engineer living in Columbus, OH. Ruby, clean code, delicious foods, and video game enthusiast.">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box"> <!-- class="top-box-texture" -->
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h1>Learning Perl</h1>
+
+<h2>First Steps into a new language</h2>
+
+<p>Ruby has spoiled me.</p>
+
+<p>Dynamically typed, variable syntax, everything-is-an-object, learning Ruby was a joy and the challenges of my time as a Ruby initiate were most often CS struggles rather than fighting with the language itself. Even just a few weeks into the language meant that I could sit down and spin out terrible code that did some pretty cool things, like with my project <a href="/portfolio/rubysweeper/">Gemfarm</a>. Ruby does so much for you and abstracts over so many things that I never had to really understand what was happening underneath.</p>
+
+<p>The longer I spend as a developer, the less true that becomes. Sharpening my JavaScript skills began to push some of that ignorance into the light, and I was forced to adjust. Recently, for work, I've started playing with one of Ruby's grandparents, Perl- and oh buddy, it's occasionally a bit silly.</p>
+
+<p>Thankfully, Ruby and Perl share a great deal. A great deal of the syntax is mutually understandable and Perl's primitive datatypes are a lot more reasonable than I would have originally expected. Perl's lists and anonymous arrays/hashes aren't too dissimilar from Ruby's own, and accessing them works in a pretty similar manner.</p>
+
+<p>Then things get a little unpleasant.</p>
+
+<h4>Libraries</h4>
+
+<p>Ruby gems are a beautiful library system. With bundler and rbenv, I can manage pretty wildly different projects with heavily differing version dependencies, all on the same machine and even sitting next to each other in the same folder, all with ease. A few lines into a Gemfile and a properly setup rbenv means I can spin up my Ruby projects within minutes and that oftentimes the setup process is nearly identical across projects. Aaaaand everything is free, for the most part.</p>
+
+<p>Perl? I still barely understand CPAN. Accessing the remote repos, installing individual dependencies all for the purpose of getting a single damn project to run has been unpleasant, at best. I have little to no understanding of how package management works in Perl and can really only find examples of paid for products. Getting a Perl Catalyst system working on my system has been almost a nightmare, and documentation is sorely lacking, especially compared to ruby's beautifucal docs.</p>
+
+<h4>OO??</h4>
+
+<p>My only real understanding of OO at this point is Ruby's sole interpretation of Object-Oriented programming and design, and it's been a gentle path to knowledge. Ruby is forgiving and there are some really terrific books out in the world that have helped me a great deal.</p>
+
+<p>Perl's OO capabilities seem like they were simply tacked on years after the language was already made, which I understand is pretty much exactly how it happened. The concept of "blessing" and managing objects is confusing as hell to someone coming from a much more native OO language, so it seems that Perl is mostly intended to be a procedural language, which thankfully is how the Perl codebases I'll be working with are designed.</p>
+
+<h4>TIMTOWTDI</h4>
+
+<p>There is more than one way to do it.</p>
+
+<p>Ruby carries this philosophy deep into its core, which is terrific. I love that languages allow for personal programmer's styles and personalities to show a little bit more in their code without simply just following a very long and strict list of precepts that can never be broken.</p>
+
+<p>But it can lead to problems. <a href="https://twitter.com/mikedanko">Mike Danko</a> recently gave a talk on the dangers of being clever at the <a href="http://columbusrb.com/">Columbus Ruby brigade</a>. TIMTOWTDI opens up a great deal of room for people to find clever, unreadable and oftentimes unmanageable code solutions that clog up codebases and create enormous amounts of technical debt. Legacy code can be cluttered beyond recognition, full of years-old clever workarounds for problems that may no longer be relevant or exist.</p>
+
+<h4>General Whining</h4>
+
+<p>I enjoy learning new things, and Perl is no exception. It's been a joy to dive into a new language and stretch my very limited understanding of programming. Compared to a lot of other languages, Perl is a pretty easy next step- it shares so much in common with Ruby that it's a fairly small step to get over into Perl country from Ruby land. Especially compared to some heavier stuff like Clojure, Go, C++ or even C, learning Perl is a breeze.</p>
+
+<p>Mostly, I'm just excited about the opportunity to even have these thoughts or complaints. I like that I'm building analytical tools to compare these different languages and that I can begin to flex my 'polyglot' muscles. Being stretched is fun, and I enjoy the process of being pushed.</p>
+
+<p>The above comparisons are little more than my ignorant and sophomoric attempts to have an intelligent discussion about something very new to me. I hope that at the very least you found some of it amusing.</p>
+
+
+<a href="/blog/">Go Back</a>
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+    <script>
+      document.getElementById("gradient-box").className = "top-box-texture-red";
+    </script>
+  </body>
+</html>
