@@ -8,3 +8,8 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 highlighter: pygments
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - wercker.yml
