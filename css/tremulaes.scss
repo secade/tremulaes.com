@@ -1,11 +1,19 @@
-@import "bourbon/bourbon";
-@import "neat/neat";
-@import "css/texture";
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import "texture";
 
 // new fonts: 'Anton', sans-serif; 'Roboto Slab', serif; 'Francois One', sans-serif; 'Inconsolata';
 
 $main-font: 'Francois One', sans-serif;
 $second-font: 'Roboto Slab', serif;
+
+#disqus_thread {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 15px;
+}
 
 .video-container {
   iframe {
