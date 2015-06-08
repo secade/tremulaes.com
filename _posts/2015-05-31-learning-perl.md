@@ -13,7 +13,7 @@ Dynamically typed, variable syntax, everything-is-an-object, learning Ruby was a
 
 Ruby has spoiled me.
 
-Dynamically typed, variable syntax, everything-is-an-object, learning Ruby was a joy and the challenges of my time as a Ruby initiate were most often CS struggles rather than fighting with the language itself. Even just a few weeks into the language meant that I could sit down and spin out terrible code that did some pretty cool things, like with my project [Gemfarm](/portfolio/rubysweeper/). Ruby does so much for you and abstracts over so many things that I never had to really understand what was happening underneath.
+Dynamically typed, variable syntax, everything-is-an-object, learning Ruby was a joy and the challenges of my time as a Ruby initiate were most often CS struggles rather than fighting with the language itself. Even just a few weeks into the language meant that I could sit down and spin out terrible code that did some pretty cool things, like with my project [Gemfarm](/portfolio/gemfarm/). Ruby does so much for you and abstracts over so many things that I never had to really understand what was happening underneath.
 
 The longer I spend as a developer, the less true that becomes. Sharpening my JavaScript skills began to push some of that ignorance into the light, and I was forced to adjust. Recently, for work, I've started playing with one of Ruby's grandparents, Perl- and oh buddy, it's occasionally a bit silly.
 
