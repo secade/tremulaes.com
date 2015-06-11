@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for Chris Singer, newly minted Software Engineer living in Columbus, OH. Ruby, clean code, delicious foods, and video game enthusiast.">
+    <link rel="shortcut icon" href="/img/icon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Roboto+Slab|Francois+One|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="/css/tremulaes.css" rel="stylesheet">
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/tremulaes.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+    <div id="top" class="top-box">
+      <div id="gradient-box"> <!-- class="top-box-texture" -->
+        <div class="top-box-text">Christopher [c] Singer</div>
+      </div>
+    </div>
+    <div id="nav" class="centered-navigation" role="banner">
+      <div class="centered-navigation-wrapper">
+        <nav role="navigation">
+          <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+            <li class="nav-link"><a href="/blog/">Blog</a></li>
+            <li class="nav-link"><a href="/about/">About Me</a></li>
+            <li class="nav-link logo">
+              <a href="/" class="logo">
+                <img src="/img/squid.png" alt="Logo image">
+              </a>
+            </li>
+            <li class="nav-link"><a href="/portfolio/">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- centered-nav -->
+    <div class="body-texture">
+      <div id="central" class="container">
+
+<h1>Iron and Text</h1>
+
+<h2>The Greatest Dependency</h2>
+
+<p>I started my journey into the world of tech first with hardware. I was working as a low level IT tech at a call center, handling their internal call center needs- everyone's favorite support desk role. Over time, I was fortunate enough to be able to get involved with some higher level work, getting to play with some basic server administration and database management.</p>
+
+<p>Every minute of that work was exciting to me! Before I started with IT, I (apparently) knew surprisingly little about computers for someone who had been using them pretty much his whole life. Having the opportunity to learn about individual machine architecture and slowly moving up into systems design and trying to grasp how the web worked was a very stimulating challenge and I only wanted more. Eventually, I also developed a fascination with development and got into that, but my love for the hardware side of things hasn't gone away.</p>
+
+<p>Since moving into the development space of the tech world, I was pretty surprised to find a big gulf between the systems side and the code side of application management/deployment- what is apparently the 'Development' vs 'Operations' issue. It always seemed to me that these sides are intrinsically linked- after all, what good is code if you have no way to get it to your consumers?</p>
+
+<p><img src="http://dev2ops.org/wp-content/uploads/2010/02/WallOfConfusion.png" alt="Development vs Ops" /></p>
+
+<p>While the concepts behind the DevOps movement are nothing new, the recent buzz around the word and that particular part of the industry has brought this Dev vs Ops argument pretty harshly to light. Still, though, I hear a lot of developers arguing that deploying code isn't their concern- it's someone elses. It's someone else's job to get it running, to figure out how to get it to their servers, to make sure it's scaling and to make sure it works. A dev's job is to develop.</p>
+
+<p>This is all very confusing to me. Building these two essential functions into separate silos seems foolhardy, at best. Desigining your application with no mind or consideration for <em>how</em> it is going to serve is a recipe for failure. You might get away with it for a while, but especially as things start to scale up it's going to make things damn near impossible to keep going without a rewrite. <a href="http://blog.parse.com/learn/how-we-moved-our-api-from-ruby-to-go-and-saved-our-sanity/">A recent post by Parse</a> is a great example of how damaging these silos can be, and how easily they can lead to misdiagnosing problems.</p>
+
+<p>Siloing has always been an issue in tech. Creating walls in which code is essentially 'tossed' over to move forward in the SLDC is asking for a hell of a lot of trouble. Silos between Dev, QA, Staging and Production can wreak havoc on any chance you'd have to ship software with any speed. The human tendency to both assign and avoid blame can and does quickly lead to everyone's famous "Us vs Them" attitudes- everyone is on different teams and it's hard to keep the big picture in mind.</p>
+
+<p><img src="http://www.wired.com/wp-content/uploads/blogs/insights/wp-content/uploads/2013/02/silo_6601.jpg" alt="Silos" /></p>
+
+<p>Finding ways to break down the walls of those silos is essential, and a great place to start is by getting developers involved in the process of deploying their code. There's always going to be some divide between Ops and Dev- people are going to have to have roles and specializations to be utilized in the most efficient manner. But getting your developers thinking hard on how the decisions they're making can affect deployment can make all the difference in the world.</p>
+
+<p>Some good examples of how this can play about are presented in the Parse article (I know it's long, but it's still an interesting read). For those working on Rails, it's often easy to blame Rails for issues with speed and scalability like the article from Parse does. Hell, they even blamed Ruby as a language. But it seems to me that simple design changes could have provided a pretty big improvement in speed.</p>
+
+<p>A few minutes of googling and reading identifies pretty quickly that their tools of choice for plugging into Rails were not the smartest ones. <a href="https://github.com/defunkt/unicorn">Unicorn</a> and <a href="https://github.com/capistrano/capistrano">Capistrano</a> for Rails deployment are known for being inefficient at scale- especially the single-threaded Unicorn which is designed for very short and heavy processing but fails miserably when dealing with processes taking any time at all. Running 24 Unicorns on each AWS machine is a great way to strangle everything that's happening- as the article says, these tools aren't great for concurrency.</p>
+
+<p>A lot of the discussion around the benefits of Golang seem accurate, but the rewrite instead of trying to actually utilize better tools in Ruby and Rails seems to indicate that their teams weren't thinking together. 200 m1.xlarge instances on AWS is an enormous amount of iron and there are tools out there that can allow Rails to function at scale on even lighter hardware. Again, just a few minutes of research indicates that tools like <a href="https://www.phusionpassenger.com/">Phusion Passenger</a> server, working with <a href="http://nginx.com/">Nginx</a>, can allow Rails to work beautifully with a great deal of concurrency, even if Ruby itself lacks the built-in, evented concurrency that Go has.</p>
+
+<p>I don't mean to harsh or hate on the Parse team- the blog was fascinating and it's terrific that they're happy with their new system (and a rewrite into Golang sounds like a ton of fun!). But even as someone new in the field, reading through does nothing but remind me of this gulf that exists between those who write code, and those who get it on its production iron. As an industry, finding ways to bring those silos together and acting as a single team benefits <em>everyone</em>- devs, ops staff, and your clients.</p>
+
+<p>Being involved with my new company's processes means I get to see these decisions up close and personal. I love that I can take part in these discussions and (hopefully) contribute in a meaningful and sensible manner. It's all a beautiful and nearly frustrating reminder that tech is enormous and there's always far too much for my puny human brain to learn. I'm just fortunate enough to be in a position to struggle through and try.</p>
+
+
+<a href="/blog/">Go Back</a>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'tremulaes';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      </div>
+      <div id="bot" class="low-box">
+        <div class="low-box-wrapper">
+          <p>Christopher C Singer (c) 2015</p>
+        </div>
+        <img src="/img/silhouette.png" />
+      </div>
+    </div>
+    <script>
+      document.getElementById("gradient-box").className = "top-box-texture-red";
+    </script>
+  </body>
+</html>
