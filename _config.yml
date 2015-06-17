@@ -8,9 +8,10 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 highlighter: pygments
+sass:
+    sass_dir: _sass
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - wercker.yml
-  - "css/tremulaes.scss"
