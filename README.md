@@ -7,10 +7,6 @@ Repo for personal website at tremulaes.com
 
 I used Jekyll as an html preprocessor to help with creation of the site. This is my first project using this tool.
 
-#### Bourbon/Neat
-
-I preferred the lightweight nature of Bourbon and Neat over the overbearing nature of something as heavy as Bootstrap. This is my first project using either of these tools.
-
 #### Wercker
 
 I used this as a means of automated deployment to my webhosting service.
@@ -28,7 +24,7 @@ I use a few Amazon products for this site:
 Contact me at any time:
 
 * ccsinger AT gmail DOT com
-* twitter: tremulaes
+* twitter: @tremulaes
 * linkedin: www.linkedin.com/in/ccsinger
 
 Chris Singer (c) 2015

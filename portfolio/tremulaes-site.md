@@ -1,7 +1,6 @@
 ---
 title: 'Portfolio: tremulaes.com'
 layout: default
-topcolor: green
 --- 
 
 ## Tremulaes.com

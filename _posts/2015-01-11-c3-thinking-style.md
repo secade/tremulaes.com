@@ -1,7 +1,6 @@
 ---
 title: Gimme Dem Brains
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "I’ve always considered myself fortunate to have the manner in which I think and learn. According to the Gregorc analysis, I have a Concrete Random thinking style, though from descriptions I believe I stray fairly wildly across the entire spectrum depending on mood and subject matter."
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'Portfolio: Gemfarm'
 layout: default
-topcolor: green
 --- 
 
 ## Gemfarm

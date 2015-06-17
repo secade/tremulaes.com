@@ -1,7 +1,6 @@
 ---
 title: "Forever Dumb"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "Working in tech means something different to all of us, even/especially for those of us in development. Hardware has come a very long way in recent years, but nothing seems to change quite as fast as the world of development. Every day, corporations, startups, online communities and individuals are using the utmost of their resources to help build new and better tools for today and tomorrow."
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Two Weeks"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "I typically study for about 14-16 hours a day, between on-site work with pair programming, mentoring, and group work, followed by solo studies in the evening to do my best to stay ahead of the work and make sure that the mental models I build during the day are both accurate and robust. Learning often involves a lot of rewiring of pathways, ideas, and understanding, and I want to be exposed to as much relevant data as I can."
 ---

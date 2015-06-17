@@ -1,7 +1,6 @@
 ---
 title: "Learning Perl"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "Ruby has spoiled me.
 

@@ -1,7 +1,6 @@
 ---
 title: "Getting Greedy"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "I'll be the first to admit that I'm a greedy person. If you've never been unfortunate enough to watch me sit down and eat a platter of good chicken wings, it might be hard to understand what I mean- to summarize, I leave behind a small pile of white, hollow sticks. I eat every scrap of skin, meat, tendon and marrow that I can chew off. Because I want it all."
 ---

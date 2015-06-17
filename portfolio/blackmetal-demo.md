@@ -1,7 +1,6 @@
 ---
 title: "Portfolio: Blackmetal B* Demo"
 layout: default
-topcolor: green
 ---
 
 # Blackmetal B* Demo

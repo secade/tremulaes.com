@@ -1,7 +1,6 @@
 ---
 title: "KalamazooX"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "The benefit from conferences is often subtle, especially when the focus isn't to give you a window into a brand new technology or tool. KalX features talks and conversations about soft skills and values that extend across the entire tech community and far away from our desks. Yet even subtle benefits can echo over the course of your career, and I know that my time at KalX will do exactly that."
 ---

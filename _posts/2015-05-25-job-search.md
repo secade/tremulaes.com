@@ -1,7 +1,6 @@
 ---
 title: "The Hunt For Great Employment"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "On April 24, I graduated from Dev Bootcamp and was thrust out into the world as an employable freshman in the development industry. After the appropriate amount of celebratory hedonism, it hit me the following night when I woke up- I was *actually* unemployed. I *actually* had to get a job. In a field where I was a total n00b with no degree, no pedigree, and little more than the dogtags that came with graduation from DBC."
 ---

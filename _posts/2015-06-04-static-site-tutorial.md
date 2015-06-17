@@ -1,7 +1,6 @@
 ---
 title: "Static Site Setup Tutorial"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "I love static websites. They're served very fast and security is practically not even a concern- no database to hack, no data to mine, nothing to pull or inject or mess with at all. This site was my first attempt at building a static site from nearly scratch, picking technologies that I barely understood and somehow stringing them together without really having much of a clue at all as to how anything worked."
 ---

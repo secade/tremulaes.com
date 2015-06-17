@@ -1,7 +1,6 @@
 ---
 title: "Graduation"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "It goes without saying that my experience in DBC was one of intensity and a great deal of pressure. I walked in with a pretty long list of goals, expectations, and objectives. I wanted to be my best, to crush every challenge, and to walk away victorious and ready to become an amazing developer."
 ---

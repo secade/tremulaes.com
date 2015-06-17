@@ -1,7 +1,6 @@
 ---
 title: "Iron and Text"
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "Every minute of that work was exciting to me! Before I started with IT, I (apparently) knew surprisingly little about computers for someone who had been using them pretty much his whole life. Having the opportunity to learn about individual machine architecture and slowly moving up into systems design and trying to grasp how the web worked was a very stimulating challenge and I only wanted more. Eventually, I also developed a fascination with development and got into that, but my love for the hardware side of things hasn't gone away."
 ---

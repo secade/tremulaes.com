@@ -1,7 +1,6 @@
 ---
 title: Holes in Our World
 layout: post
-topcolor: red
 excerpt_separator: ""
 excerpt: "A common conversation in popular culture, especially in academics, has been the overall lack of diversity in STEM fields- this certainly includes the tech sector. Numerous studies and reports continue to show that woman and people of color are sorely underrepresented in the technical fields of computer science and engineering. Although the numbers have been increasing in recent years, the balance still remains sorely out of whack, and the tech community suffers."
 ---
