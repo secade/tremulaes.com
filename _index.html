@@ -1,0 +1,30 @@
+---
+pagetitle: The mind of Chris Singer
+layout: default
+---
+
+<div id="splash-wrapper" class="splash-wrapper">
+  <div class="splash">
+    <a href="/portfolio/dev-bootcamp/">
+      <img src="/img/splash-dbc.png" alt="DBC Project Picture" />
+    </a>
+  </div>
+</div>
+
+<h2>Welcome!</h2>
+
+<p>Welcome to the website of Chris Singer!</p>
+
+<p>I am a recent <a href="/portfolio/dev-bootcamp/">Dev Bootcamp</a> graduate who is just beginning their journey into the world of professional software engineering. I'll be starting work soon at <a href="https://www.2checkout.com/">2Checkout</a> in Columbus, Ohio, and I couldn't be more excited to really flex my new developer muscles. Poke around the site to learn more!</p>
+
+<p>Questions? Comments? Critiques? Just <a href="/contact/">contact</a> me!</p>
+
+<h2>Recent Blogs</h2>
+
+<ul style="list-style:none">
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

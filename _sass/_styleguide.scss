@@ -1,0 +1,113 @@
+// Colour boxes
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  max-width: 360px;
+  color: $gray-dark;
+  font-family: $font-copy;
+}
+
+.color {
+  max-width: 100px;
+  min-width: 100px;
+  height: 100px;
+  margin: 5px 5px;
+  padding: 4px;
+}
+
+.light-text {
+  color: $white-false;
+}
+
+.or-primary {
+  background-color: $or-primary;
+}
+
+.or-light {
+  background-color: $or-light; 
+}
+
+.yellow {
+  background-color: $yellow; 
+}
+
+.or-dark {
+  background-color: $or-dark;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.red {
+  background-color: $red;
+}
+
+.gray-dark {
+  background-color: $gray-dark;
+}
+
+.gray-medium {
+  background-color: $gray-medium;
+}
+
+.gray-light {
+  background-color: $gray-light;
+}
+
+.white {
+  background-color: $white-false;
+}
+
+// Headers
+
+.heading {
+  width: auto;
+  margin: 0 0 1em;
+  padding: 0.5em;
+}
+
+h1 {
+  text-align: center;
+  padding: 0.25em;
+  background-color: $or-primary;
+  border: 4px $red solid;
+  font-size: 4em;
+  font-family: $font-header;
+  font-weight: bold;
+  color: $or-light;
+}
+
+.extrude-red {
+  text-shadow: 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red, 5px 5px $red, 6px 6px $red;
+  -moz-transition: all 0.3s ease-out; /* FF3.7+ */
+    -o-transition: all 0.3s ease-out; /* Opera 10.5 */
+  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+          transition: all 0.3s ease-out;
+  &:hover {
+    color: $white-false;
+    text-shadow: 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red, 5px 5px $red, 6px 6px $red, 7px 7px $red, 8px 8px $red, 9px 9px $red, 10px 10px $red, 11px 11px $red, 12px 12px $red, 13px 13px $red, 14px 14px $red;
+  }
+}
+
+.extrude-blue {
+  text-shadow: 1px 1px $blue, 2px 2px $blue, 3px 3px $blue, 4px 4px $blue, 5px 5px $blue, 6px 6px $blue; 
+  -moz-transition: all 0.3s ease-out; /* FF3.7+ */
+    -o-transition: all 0.3s ease-out; /* Opera 10.5 */
+  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+          transition: all 0.3s ease-out;
+  &:hover {
+    color: $white-false;
+    text-shadow: 1px 1px $blue, 2px 2px $blue, 3px 3px $blue, 4px 4px $blue, 5px 5px $blue, 6px 6px $blue, 7px 7px $blue, 8px 8px $blue, 9px 9px $blue, 10px 10px $blue, 11px 11px $blue, 12px 12px $blue, 13px 13px $blue, 14px 14px $blue;
+  }
+}
+
+// Misc
+
+html, body {
+  margin: 0;
+  padding: 0;
+}

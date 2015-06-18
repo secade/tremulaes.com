@@ -1,0 +1,47 @@
+// Attempts at responsiveness
+
+$extra-small-width: 540px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin xs-size {
+  @media (max-width: #{$extra-small-width}) {
+    @content
+  }
+}
+
+@mixin sm-size {
+  @media (min-width: #{$extra-small-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin md-size {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-size {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Colors
+
+$white-false: #F5F5F5;
+$gray-dark: #2c2c2c;
+$gray-medium: #CCCCCC;
+$gray-light: #E9E9E9;
+$or-primary: #FFBE00;
+$or-light: #FFB84F;
+$or-dark: #FF9000;
+$yellow: #FFF727;
+$blue: #3A30B2;
+$red: #E22360;
+
+// Fonts
+
+$font-header: 'Amaranth', sans-serif;
+$font-copy: 'Titillium Web', sans-serif;
