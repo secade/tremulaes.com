@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $or-primary;
+  background-color: $white;
 }
 // Colour boxes
 
@@ -12,7 +12,7 @@ html, body {
   align-content: flex-start;
   flex-flow: row wrap;
   max-width: 360px;
-  color: $gray-dark;
+  color: $black;
   font-family: $font-copy;
 }
 
@@ -25,105 +25,103 @@ html, body {
 }
 
 .light-text {
-  color: $white-false;
+  color: $white;
 }
 
-.or-primary {
-  background-color: $or-primary;
+.primary {
+  background-color: $primary;
 }
 
-.or-light {
-  background-color: $or-light; 
+.pri-light {
+  background-color: $pri-light; 
 }
 
-.yellow {
-  background-color: $yellow; 
+.pri-dark {
+  background-color: $pri-dark;
 }
 
-.or-dark {
-  background-color: $or-dark;
+.accent-pri {
+  background-color: $accent-pri;
 }
 
-.blue {
-  background-color: $blue;
+.accent-sec {
+  background-color: $accent-sec;
 }
 
-.red {
-  background-color: $red;
-}
-
-.gray-dark {
-  background-color: $gray-dark;
-}
-
-.gray-medium {
-  background-color: $gray-medium;
-}
-
-.gray-light {
-  background-color: $gray-light;
+.accent-tri {
+  background-color: $accent-tri;
 }
 
 .white {
-  background-color: $white-false;
+  background-color: $white;
+}
+
+.gray {
+  background-color: $gray;
+}
+
+.black {
+  background-color: $black;
 }
 
 // Headers
 
 .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: auto;
-  margin: 0 0 1em;
-  padding: 0.5em;
-}
+  margin: 0;
+  // padding: 0 .25em;
+  background-color: $primary;
+  // border: 4px $accent-pri solid;
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 4em;
+    font-family: $font-header;
+    font-weight: bold;
+    color: $primary;
+    .extrude {
+      -moz-transition: all 0.3s ease-out; /* FF3.7+ */
+        -o-transition: all 0.3s ease-out; /* Opera 10.5 */
+      -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+              transition: all 0.3s ease-out;
+    }
+    .extrude-red {
+      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri;
+    }
 
-h1 {
-  text-align: center;
-  padding: 0.25em;
-  background-color: $or-primary;
-  border: 4px $red solid;
-  font-size: 4em;
-  font-family: $font-header;
-  font-weight: bold;
-  color: $or-light;
-}
-
-.extrude-red {
-  text-shadow: 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red, 5px 5px $red, 6px 6px $red;
-  -moz-transition: all 0.3s ease-out; /* FF3.7+ */
-    -o-transition: all 0.3s ease-out; /* Opera 10.5 */
-  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
-          transition: all 0.3s ease-out;
-  &:hover {
-    color: $white-false;
-    text-shadow: 1px 1px $red, 2px 2px $red, 3px 3px $red, 4px 4px $red, 5px 5px $red, 6px 6px $red, 7px 7px $red, 8px 8px $red, 9px 9px $red, 10px 10px $red, 11px 11px $red, 12px 12px $red, 13px 13px $red, 14px 14px $red;
-  }
-}
-
-.extrude-blue {
-  text-shadow: 1px 1px $blue, 2px 2px $blue, 3px 3px $blue, 4px 4px $blue, 5px 5px $blue, 6px 6px $blue; 
-  -moz-transition: all 0.3s ease-out; /* FF3.7+ */
-    -o-transition: all 0.3s ease-out; /* Opera 10.5 */
-  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
-          transition: all 0.3s ease-out;
-  &:hover {
-    color: $white-false;
-    text-shadow: 1px 1px $blue, 2px 2px $blue, 3px 3px $blue, 4px 4px $blue, 5px 5px $blue, 6px 6px $blue, 7px 7px $blue, 8px 8px $blue, 9px 9px $blue, 10px 10px $blue, 11px 11px $blue, 12px 12px $blue, 13px 13px $blue, 14px 14px $blue;
+    .extrude-blue {
+      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec; 
+    }
+    &:hover .extrude-red {
+      color: $white;
+      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri, 7px 7px $accent-pri, 8px 8px $accent-pri, 9px 9px $accent-pri, 10px 10px $accent-pri, 11px 11px $accent-pri, 12px 12px $accent-pri, 13px 13px $accent-pri, 14px 14px $accent-pri;
+    }
+    &:hover .extrude-blue {
+      color: $white;
+      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec, 7px 7px $accent-sec, 8px 8px $accent-sec, 9px 9px $accent-sec, 10px 10px $accent-sec, 11px 11px $accent-sec, 12px 12px $accent-sec, 13px 13px $accent-sec, 14px 14px $accent-sec;
+    }
   }
 }
 
 .small-header {
-  margin: 0.5em auto 0;
+  margin: 0 auto;
   padding-top: 0.25em;
   font-family: $font-header;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: $red;
-
+  color: $pri-light;
+  background-color: $pri-dark;
   hr {
+    position: relative;
+    top: 0.9em;
     padding: 0;
     border: none;
-    box-shadow: 0 0 0 2px $red, 0 4px 0 2px $blue;
+    box-shadow: 0 0 0 2px $pri-light, 0 4px 0 2px $accent-tri;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -132,17 +130,17 @@ h1 {
   span {
     position: relative;
     display: inline-block;
-    top: -0.5em;
+    top: -0.15em;
     font-size: 2.5em;
     padding: 0 0.25em;
-    background: $or-primary;
+    background: $pri-dark;
     transition: all 0.2s ease-out;
   } 
   &:hover hr {
-    box-shadow: 0 -8px 0 2px $blue, 0 14px 0 2px $red;
+    box-shadow: 0 -8px 0 2px $accent-tri, 0 14px 0 2px $pri-light;
   }
   &:hover span {
-    color: $blue;
+    color: $accent-tri;
     letter-spacing: 5px;
   }
 }
@@ -161,10 +159,10 @@ h1 {
   padding: 0.5em 1.5em;
   margin: 0 0.5em;
   transition: background 0.1s ease, color 0.1s linear;
-  border-color: $blue;
-  color: $blue;
+  border-color: $accent-sec;
+  color: $accent-sec;
   &:hover {
-    background: $blue;
+    background: $accent-sec;
     color: #fff;
   }
 }

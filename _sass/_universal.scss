@@ -30,16 +30,22 @@ $desktop-width: 1024px;
 
 // Colors
 
-$white-false: #F5F5F5;
-$gray-dark: #2c2c2c;
-$gray-medium: #CCCCCC;
-$gray-light: #E9E9E9;
-$or-primary: #FFBE00;
-$or-light: #FFB84F;
-$or-dark: #FF9000;
-$yellow: #FFF727;
-$blue: #3A30B2;
-$red: #E22360;
+$lime: #D1E633;
+$grapefruit: #FE4323;
+$lemon: #FEF533;
+$orange: #F7B502;
+$orange-dark: #F97400;
+$blue-bonnet: #1826AB;
+
+$primary: $orange;
+$pri-light: $lemon;
+$pri-dark: $orange-dark;
+$accent-pri: $grapefruit;
+$accent-sec: $blue-bonnet;
+$accent-tri: $lime;
+$white: #F5F5F5;
+$gray: #CCCCCC;
+$black: #2c2c2c;
 
 // Fonts
 
