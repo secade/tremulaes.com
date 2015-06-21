@@ -1,6 +1,53 @@
 footer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 500px; //omg change
+  padding: 0.65em 0;
   background-color: $black;
   color: $white;
+
+      font-size: 2em;
+      @include sm {
+        font-size: 3em;
+      }
+      @include md {
+        font-size: 4em;
+      }
+      @include lg {
+        font-size: 6em;
+      }
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 0 0.5em;
+      // transition: all 0.1s ease;
+      text-decoration: none;
+      &:link {
+        color: $primary;
+      }
+      &:visited {
+        color: $pri-dark;
+      }
+      &:hover, &:active {
+        color: $pri-light;
+      }
+    }
+      .spin:hover, .spin:active {
+        -webkit-animation: spin-loop 5s linear infinite; /* Safari 4+ */
+        -moz-animation:    spin-loop 5s linear infinite; /* Fx 5+ */
+        -o-animation:      spin-loop 5s linear infinite; /* Opera 12+ */
+        animation:         spin-loop 5s linear infinite; /* IE 10+, Fx 29+ */
+      }
+  }
 }

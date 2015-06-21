@@ -121,3 +121,79 @@ html, body {
     color: #fff;
   }
 }
+
+// Animation
+
+@-webkit-keyframes hor-spinner {
+  0%{
+    transform: rotateY(0deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  25% {
+    transform: rotateY(90deg);
+    text-shadow: 3px 0px $accent-pri,6px 0px $accent-pri,9px 0px $accent-pri,12px 0px $accent-pri,15px 0px $accent-pri,15px 0px $accent-pri;
+  }
+  50% {
+    transform: rotateY(180deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  75% {
+    transform: rotateY(90deg);
+    text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
+  }
+}
+@-moz-keyframes hor-spinner {
+  0%{
+    transform: rotateY(0deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  25% {
+    transform: rotateY(90deg);
+    text-shadow: 3px 0px $accent-pri,6px 0px $accent-pri,9px 0px $accent-pri,12px 0px $accent-pri,15px 0px $accent-pri,15px 0px $accent-pri;
+  }
+  50% {
+    transform: rotateY(180deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  75% {
+    transform: rotateY(90deg);
+    text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
+  }
+}
+@-o-keyframes hor-spinner {
+  0%{
+    transform: rotateY(0deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  25% {
+    transform: rotateY(90deg);
+    text-shadow: 3px 0px $accent-pri,6px 0px $accent-pri,9px 0px $accent-pri,12px 0px $accent-pri,15px 0px $accent-pri,15px 0px $accent-pri;
+  }
+  50% {
+    transform: rotateY(180deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  75% {
+    transform: rotateY(90deg);
+    text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
+  }
+}
+@keyframes spin-loop {
+  0%{
+    transform: rotateY(0deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  25% {
+    transform: rotateY(90deg);
+    text-shadow: 3px 0px $accent-pri,6px 0px $accent-pri,9px 0px $accent-pri,12px 0px $accent-pri,15px 0px $accent-pri,15px 0px $accent-pri;
+  }
+  50% {
+    transform: rotateY(180deg);
+    text-shadow: 0px 0px $accent-pri;
+  }
+  75% {
+    transform: rotateY(90deg);
+    text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
+  }
+}
+
