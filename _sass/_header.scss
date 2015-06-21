@@ -1,0 +1,41 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  background-color: $primary;
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 6em;
+    font-family: $font-header;
+    font-weight: bold;
+    color: $primary;
+    .extrude {
+      -moz-transition: all 0.3s ease-out; /* FF3.7+ */
+        -o-transition: all 0.3s ease-out; /* Opera 10.5 */
+      -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+              transition: all 0.3s ease-out;
+      &:hover {
+        font-size: 1.5em;
+      }
+    }
+    .extrude-red {
+      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri;
+    }
+
+    .extrude-blue {
+      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec; 
+    }
+    &:hover .extrude-red {
+      color: $white;
+      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri, 7px 7px $accent-pri, 8px 8px $accent-pri, 9px 9px $accent-pri, 10px 10px $accent-pri, 11px 11px $accent-pri, 12px 12px $accent-pri, 13px 13px $accent-pri, 14px 14px $accent-pri, 15px 15px $accent-pri, 16px 16px $accent-pri, 17px 17px $accent-pri, 18px 18px $accent-pri;
+    }
+    &:hover .extrude-blue {
+      color: $white;
+      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec, 7px 7px $accent-sec, 8px 8px $accent-sec, 9px 9px $accent-sec, 10px 10px $accent-sec, 11px 11px $accent-sec, 12px 12px $accent-sec, 13px 13px $accent-sec, 14px 14px $accent-sec, 15px 15px $accent-sec,16px 16px $accent-sec,17px 17px $accent-sec, 18px 18px $accent-sec;
+    }
+  }
+}

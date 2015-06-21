@@ -51,3 +51,33 @@ $black: #2c2c2c;
 
 $font-header: 'Amaranth', sans-serif;
 $font-copy: 'Titillium Web', sans-serif;
+
+// setup
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+// Buttons
+
+.button, button {
+  border: 3px solid #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: $font-header;
+  letter-spacing: 1px;
+  background: transparent;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em;
+  transition: background 0.1s ease, color 0.1s linear;
+  border-color: $accent-sec;
+  color: $accent-sec;
+  &:hover {
+    background: $accent-sec;
+    color: #fff;
+  }
+}

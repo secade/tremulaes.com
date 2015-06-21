@@ -1,8 +1,3 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: $white;
-}
 // Colour boxes
 
 .color-container {
@@ -64,64 +59,21 @@ html, body {
   background-color: $black;
 }
 
-// Headers
-
-.heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: auto;
-  margin: 0;
-  // padding: 0 .25em;
-  background-color: $primary;
-  // border: 4px $accent-pri solid;
-  h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 4em;
-    font-family: $font-header;
-    font-weight: bold;
-    color: $primary;
-    .extrude {
-      -moz-transition: all 0.3s ease-out; /* FF3.7+ */
-        -o-transition: all 0.3s ease-out; /* Opera 10.5 */
-      -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
-              transition: all 0.3s ease-out;
-    }
-    .extrude-red {
-      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri;
-    }
-
-    .extrude-blue {
-      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec; 
-    }
-    &:hover .extrude-red {
-      color: $white;
-      text-shadow: 1px 1px $accent-pri, 2px 2px $accent-pri, 3px 3px $accent-pri, 4px 4px $accent-pri, 5px 5px $accent-pri, 6px 6px $accent-pri, 7px 7px $accent-pri, 8px 8px $accent-pri, 9px 9px $accent-pri, 10px 10px $accent-pri, 11px 11px $accent-pri, 12px 12px $accent-pri, 13px 13px $accent-pri, 14px 14px $accent-pri;
-    }
-    &:hover .extrude-blue {
-      color: $white;
-      text-shadow: 1px 1px $accent-sec, 2px 2px $accent-sec, 3px 3px $accent-sec, 4px 4px $accent-sec, 5px 5px $accent-sec, 6px 6px $accent-sec, 7px 7px $accent-sec, 8px 8px $accent-sec, 9px 9px $accent-sec, 10px 10px $accent-sec, 11px 11px $accent-sec, 12px 12px $accent-sec, 13px 13px $accent-sec, 14px 14px $accent-sec;
-    }
-  }
-}
-
-.small-header {
+.action-divider {
   margin: 0 auto;
   padding-top: 0.25em;
   font-family: $font-header;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: $pri-light;
+  color: $accent-sec;
   background-color: $pri-dark;
   hr {
     position: relative;
     top: 0.9em;
     padding: 0;
     border: none;
-    box-shadow: 0 0 0 2px $pri-light, 0 4px 0 2px $accent-tri;
+    box-shadow: 0 0 0 2px $accent-sec, 0 4px 0 2px $pri-light;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -137,10 +89,10 @@ html, body {
     transition: all 0.2s ease-out;
   } 
   &:hover hr {
-    box-shadow: 0 -8px 0 2px $accent-tri, 0 14px 0 2px $pri-light;
+    box-shadow: 0 -8px 0 2px $pri-light, 0 14px 0 2px $accent-sec;
   }
   &:hover span {
-    color: $accent-tri;
+    color: $pri-light;
     letter-spacing: 5px;
   }
 }
