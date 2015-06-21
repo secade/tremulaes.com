@@ -59,62 +59,16 @@
   background-color: $black;
 }
 
-.action-divider {
-  margin: 0 auto;
-  padding-top: 0.25em;
-  font-family: $font-header;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: $accent-sec;
-  background-color: $pri-dark;
-  hr {
-    position: relative;
-    top: 0.9em;
-    padding: 0;
-    border: none;
-    box-shadow: 0 0 0 2px $accent-sec, 0 4px 0 2px $pri-light;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  span {
-    position: relative;
-    display: inline-block;
-    top: -0.15em;
-    font-size: 2.5em;
-    padding: 0 0.25em;
-    background: $pri-dark;
-    transition: all 0.2s ease-out;
-  } 
-  &:hover hr {
-    box-shadow: 0 -8px 0 2px $pri-light, 0 14px 0 2px $accent-sec;
-  }
-  &:hover span {
-    color: $pri-light;
-    letter-spacing: 5px;
-  }
-}
+/*  HTML For color palette
 
-// Misc
-
-.button, button {
-  border: 3px solid #fff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: $font-header;
-  letter-spacing: 1px;
-  background: transparent;
-  display: inline-block;
-  padding: 0.5em 1.5em;
-  margin: 0 0.5em;
-  transition: background 0.1s ease, color 0.1s linear;
-  border-color: $accent-sec;
-  color: $accent-sec;
-  &:hover {
-    background: $accent-sec;
-    color: #fff;
-  }
-}
+<div class='color-container'>
+    <div class="color primary">Primary</div>
+    <div class="color pri-light">Light Primary</div>
+    <div class="color pri-dark">Dark Primary</div>
+    <div class="color accent-pri light-text">Primary Accent</div>
+    <div class="color accent-sec light-text">Secondary Accent</div>
+    <div class="color accent-tri">Third Accent</div>
+    <div class="color white">Light Text</div>
+    <div class="color gray">Gray</div>
+    <div class="color black light-text">Dark Text</div>
+</div>   */

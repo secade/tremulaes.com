@@ -4,25 +4,25 @@ $extra-small-width: 540px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-@mixin xs-size {
+@mixin xs {
   @media (max-width: #{$extra-small-width}) {
     @content
   }
 }
 
-@mixin sm-size {
+@mixin sm {
   @media (min-width: #{$extra-small-width}) and (max-width: #{$tablet-width - 1px}) {
     @content;
   }
 }
 
-@mixin md-size {
+@mixin md {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
 
-@mixin lg-size {
+@mixin lg {
   @media (min-width: #{$desktop-width}) {
     @content;
   }
@@ -52,12 +52,52 @@ $black: #2c2c2c;
 $font-header: 'Amaranth', sans-serif;
 $font-copy: 'Titillium Web', sans-serif;
 
-// setup
+// Layout
 
 html, body {
   margin: 0;
   padding: 0;
   background-color: $white;
+}
+
+// Dividers
+
+.action-divider {
+  margin: 0 auto;
+  padding-top: 0.25em;
+  font-family: $font-header;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $accent-sec;
+  background-color: $pri-dark;
+  hr {
+    position: relative;
+    top: 0.9em;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 0 2px $accent-sec, 0 4px 0 2px $pri-light;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    top: -0.15em;
+    font-size: 2.5em;
+    padding: 0 0.25em;
+    background: $pri-dark;
+    transition: all 0.2s ease-out;
+  } 
+  &:hover hr {
+    box-shadow: 0 -8px 0 2px $pri-light, 0 14px 0 2px $accent-sec;
+  }
+  &:hover span {
+    color: $pri-light;
+    letter-spacing: 5px;
+  }
 }
 
 // Buttons
