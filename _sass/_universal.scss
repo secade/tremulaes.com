@@ -141,6 +141,10 @@ html, body {
     transform: rotateY(90deg);
     text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
   }
+  100% {
+   transform: rotateY(360deg);
+   text-shadow: 0px 0px $accent-pri;
+  }
 }
 @-moz-keyframes hor-spinner {
   0%{
@@ -158,6 +162,10 @@ html, body {
   75% {
     transform: rotateY(90deg);
     text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
+  }
+  100% {
+   transform: rotateY(360deg);
+   text-shadow: 0px 0px $accent-pri;
   }
 }
 @-o-keyframes hor-spinner {
@@ -177,6 +185,10 @@ html, body {
     transform: rotateY(90deg);
     text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
   }
+  100% {
+   transform: rotateY(360deg);
+   text-shadow: 0px 0px $accent-pri;
+  }
 }
 @keyframes spin-loop {
   0%{
@@ -192,8 +204,14 @@ html, body {
     text-shadow: 0px 0px $accent-pri;
   }
   75% {
-    transform: rotateY(90deg);
+    transform: rotateY(270deg);
     text-shadow: -3px 0px $accent-pri,-6px 0px $accent-pri,-9px 0px $accent-pri,-12px 0px $accent-pri,-15px 0px $accent-pri;
   }
+  100% {
+   transform: rotateY(360deg);
+   text-shadow: 0px 0px $accent-pri;
+  }
 }
+
+
 

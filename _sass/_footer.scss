@@ -43,11 +43,15 @@ footer {
         color: $pri-light;
       }
     }
-      .spin:hover, .spin:active {
-        -webkit-animation: spin-loop 5s linear infinite; /* Safari 4+ */
-        -moz-animation:    spin-loop 5s linear infinite; /* Fx 5+ */
-        -o-animation:      spin-loop 5s linear infinite; /* Opera 12+ */
-        animation:         spin-loop 5s linear infinite; /* IE 10+, Fx 29+ */
-      }
+    .spin {
+      transition: 1s;
+    }
+    .spin:hover, .spin:active {
+      -webkit-animation: spin-loop 5s linear infinite; /* Safari 4+ */
+      -moz-animation:    spin-loop 5s linear infinite; /* Fx 5+ */
+      -o-animation:      spin-loop 5s linear infinite; /* Opera 12+ */
+      animation:         spin-loop 5s linear 0s infinite normal; /* IE 10+, Fx 29+ */
+      // animation-play-state: initial;
+    }
   }
 }
