@@ -480,7 +480,7 @@ footer {
   position: relative; }
   .portfolio-wrapper .portfolio-list {
     height: 300px;
-    width: 300px;
+    width: 500px;
     margin: auto;
     background-color: #FE4323; }
     .portfolio-wrapper .portfolio-list::before, .portfolio-wrapper .portfolio-list::after {
@@ -490,22 +490,20 @@ footer {
       -webkit-animation: snake 6s linear infinite; }
     .portfolio-wrapper .portfolio-list::before {
       animation-delay: -3s; }
-    .portfolio-wrapper .portfolio-list:hover::before, .portfolio-wrapper .portfolio-list:hover::after {
-      background-color: rgba(24, 38, 171, 0.3); }
 
 @-webkit-keyframes snake {
   0%, 100% {
     -webkit-clip-path: inset(305px 0 0 0);
     clip-path: inset(305px 0 0 0); }
   25% {
-    -webkit-clip-path: inset(0 0 0 305px);
-    clip-path: inset(0 0 0 305px); }
+    -webkit-clip-path: inset(0 0 0 505px);
+    clip-path: inset(0 0 0 505px); }
   50% {
     -webkit-clip-path: inset(0 0 305px 0);
     clip-path: inset(0 0 305px 0); }
   75% {
-    -webkit-clip-path: inset(0 305px 0 0);
-    clip-path: inset(0 305px 0 0); } }
+    -webkit-clip-path: inset(0 505px 0 0);
+    clip-path: inset(0 505px 0 0); } }
 .color-container {
   display: flex;
   background-color: white;

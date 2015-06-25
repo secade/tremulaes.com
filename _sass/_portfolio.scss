@@ -1,6 +1,8 @@
-$width: 300px;
+$width: 500px;
+$height: 300px;
 $border: 5px;
-$clip: $width + $border;
+$wclip: $width + $border;
+$hclip: $height + $border;
 
 %full-fill {
   position: absolute;
@@ -16,7 +18,7 @@ $clip: $width + $border;
   position: relative;
   .portfolio-list {
     @extend %full-fill;
-    height: $width;
+    height: $height;
     width: $width;
     margin: auto;
     background-color: $accent-pri;
@@ -31,27 +33,24 @@ $clip: $width + $border;
     &::before {
       animation-delay: -3s;
     }
-    &:hover::before, &:hover::after {
-      background-color: rgba($accent-sec, 0.3)
-    }
   } 
 }
 
 @-webkit-keyframes snake {
   0%, 100% {
-    -webkit-clip-path: inset($clip 0 0 0);
-    clip-path: inset($clip 0 0 0);
+    -webkit-clip-path: inset($hclip 0 0 0);
+    clip-path: inset($hclip 0 0 0);
   }
   25% {
-    -webkit-clip-path: inset(0 0 0 $clip);
-    clip-path: inset(0 0 0 $clip);
+    -webkit-clip-path: inset(0 0 0 $wclip);
+    clip-path: inset(0 0 0 $wclip);
   }
   50% {
-    -webkit-clip-path: inset(0 0 $clip 0);
-    clip-path: inset(0 0 $clip 0);
+    -webkit-clip-path: inset(0 0 $hclip 0);
+    clip-path: inset(0 0 $hclip 0);
   }
   75% {
-    -webkit-clip-path: inset(0 $clip 0 0);
-    clip-path: inset(0 $clip 0 0);
+    -webkit-clip-path: inset(0 $wclip 0 0);
+    clip-path: inset(0 $wclip 0 0);
   }
 }
