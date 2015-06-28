@@ -3,7 +3,7 @@ title: "Sunday Studies"
 layout: post
 topcolor: red
 excerpt_separator: ""
-excerpt: ""
+excerpt: "Last August, I met some friends for dimsum late one Sunday morning while we were all hungover from our respective Saturday nights out. After racking up a substantial bill from devouring large amounts of terrific Chinese food, we stumbled on over to a cafe I like to chat and hang out. At the time, I'd slowly been studying to take the CompTia A+ exam (was still working in Ops), and thought it would be fun to study with others around."
 ---
 
 # Sunday Study
