@@ -456,8 +456,12 @@ footer {
       footer .contact a:hover, footer .contact a:active {
         color: #FEF533; }
     footer .contact .spin {
-      transition: 1s; }
-    footer .contact .spin:hover, footer .contact .spin:active {
+      transition: 1s;
+      animation: spin-loop 5s linear 0s infinite normal;
+      /* IE 10+, Fx 29+ */
+      -webkit-animation: spin-loop 5s linear infinite;
+      /* Safari 4+ */ }
+    footer .contact .spin:hover {
       -webkit-animation: spin-loop 5s linear infinite;
       /* Safari 4+ */
       -moz-animation: spin-loop 5s linear infinite;

@@ -45,8 +45,10 @@ footer {
     }
     .spin {
       transition: 1s;
+      animation:         spin-loop 5s linear 0s infinite normal; /* IE 10+, Fx 29+ */
+      -webkit-animation: spin-loop 5s linear infinite; /* Safari 4+ */
     }
-    .spin:hover, .spin:active {
+    .spin:hover {
       -webkit-animation: spin-loop 5s linear infinite; /* Safari 4+ */
       -moz-animation:    spin-loop 5s linear infinite; /* Fx 5+ */
       -o-animation:      spin-loop 5s linear infinite; /* Opera 12+ */
